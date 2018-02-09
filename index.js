@@ -16,7 +16,7 @@ function nowServing(array) {
 
   if(array.length > 0) {
     //var next = katzDeliLine.shift();
-    return "Currently serving " + array.shift();
+    return "Currently serving " + array.shift()+".";
   } else {
     return "There is nobody waiting to be served!";
   }
