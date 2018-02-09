@@ -8,15 +8,15 @@ function takeANumber(katzDeliLine, newName) {
   return "Welcome, " + name + ". You are number " + place + " in line." ;
 }
 
-function nowServing() {
+function nowServing(array) {
 
   // if(katzDeliLine.length === 0) {
   //   return "There is nobody waiting to be served!"
   // }
 
-  if(katzDeliLine.length > 0) {
+  if(array.length > 0) {
     //var next = katzDeliLine.shift();
-    return "Currently serving " + katzDeliLine.shift();
+    return "Currently serving " + array.shift();
   } else {
     return "There is nobody waiting to be served!";
   }
