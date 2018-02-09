@@ -28,7 +28,6 @@ function currentLine(line) {
     line.forEach(function(name, index) {
       if(index === line.length) {
         lineString += (index+1) + ". " + name;
-        break;
       } else {
         lineString += (index+1) + ". " +name+ ", ";
       }
