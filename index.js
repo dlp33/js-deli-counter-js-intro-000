@@ -23,6 +23,12 @@ function nowServing(array) {
 }
 
 function currentLine(line) {
+
+  if !(line.length) {
+    return "The line is currently empty."
+  }
+
+
   var lineString = "The line is currently: ";
     for(var i = 0; i < line.length -1; i++) {
       lineString += (i+1) + ". " + line[i] + ", ";
@@ -30,5 +36,5 @@ function currentLine(line) {
 
     return lineString + "" + line.length+". " +line[line.length-1];
 
-  //return "The line is currently empty."
+
 }
