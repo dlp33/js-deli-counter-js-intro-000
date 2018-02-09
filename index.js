@@ -28,7 +28,7 @@ function currentLine(line) {
       lineString += (i+1) + ". " + line[i] + ", ";
     }
 
-    return lineString + "" + line.length+"."+line[line.length];
+    return lineString + "" + line.length+". " +line[line.length-1];
 
   //return "The line is currently empty."
 }
