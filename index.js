@@ -23,7 +23,14 @@ function nowServing(array) {
 }
 
 function currentLine(line) {
-  if(line.length < 1){
-    return "The line is currently empty."
+  var lineString = "The line is currently: ";
+  if(line.length){
+    line.forEach(function(name, index) {
+      lineString += index + ". " +name+ ", ";
+    })
+
+    return lineString;
   }
+
+  return "The line is currently empty."
 }
