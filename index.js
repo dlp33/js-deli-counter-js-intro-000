@@ -26,7 +26,7 @@ function currentLine(line) {
   var lineString = "The line is currently: ";
   if(line.length){
     line.forEach(function(name, index) {
-      lineString += index + ". " +name+ ", ";
+      lineString += (index+1) + ". " +name+ ", ";
     })
 
     return lineString;
