@@ -24,11 +24,9 @@ function nowServing(array) {
 
 function currentLine(line) {
   var lineString = "The line is currently: ";
-  if(line.length){
-    for(var i = 0; i < lineString.length; i++) {
+    for(var i = 0; i < line.length; i++) {
       lineString += (i+1) + ". " + line[i] + ",";
     }
-  }
 
-  return "The line is currently empty."
+  //return "The line is currently empty."
 }
